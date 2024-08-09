@@ -75,22 +75,29 @@
     }
 
     h1 {
-        margin: 0 0 20px;
+        margin: 0 0 5px;
         font-weight: bold;
         color: $text-two;
-        font-size: 36px;
+        font-size: 28px;
+        @media screen and (min-width: $s-tablet) {
+            margin: 0 0 20px;
+            font-size: 36px;
+        }
     }
 
     h2 {
         margin: 0;
         font-weight: 500;
         color: $text-two;
-        font-size: 30px;
+        font-size: 22px;
         border-left: 2px solid white;
         padding-left: 20px;
         padding-top: 7px;
         margin-left: 10px;
         text-transform: initial;
+        @media screen and (min-width: $s-tablet) {
+            font-size: 30px;
+        }
     }
 
     .title { 
@@ -104,7 +111,10 @@
         > div {
             position: relative;
             z-index: 1;
-            margin-top: 200px;
+            margin-top: 100px;
+            @media screen and (min-width: $s-tablet) {
+                margin-top: 200px;
+            }
         }
         
         &:before {
@@ -112,7 +122,7 @@
             display: block;
             position: absolute;
             z-index: 0;
-            bottom: -500px;
+            bottom: -400px;
             right:0;
             width: 767px;
             height: 767px;
@@ -219,6 +229,6 @@
 
 .wp-block {
     .hero {
-        height: 80vh;
+        height: 82vh;
     }
 }
