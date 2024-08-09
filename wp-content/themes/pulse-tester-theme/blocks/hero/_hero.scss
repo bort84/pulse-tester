@@ -111,9 +111,11 @@
         > div {
             position: relative;
             z-index: 1;
-            margin-top: 100px;
+            margin-bottom: 200px;
+
+            align-self: flex-end;
             @media screen and (min-width: $s-tablet) {
-                margin-top: 200px;
+                margin-bottom: 350px;
             }
         }
         
@@ -161,7 +163,7 @@
         
         > div {
             background: rgba(9, 76, 122, .61);
-            padding: 16% 10%;
+            padding: 16% 9%;
             border-radius: 100%;
             position: relative;
             @media screen and (min-width: $s-tablet) {
@@ -189,7 +191,7 @@
             border-radius: 100%;
 
             @media screen and (min-width: $s-tablet) {
-                padding: 17% 6.5%;
+                padding: 17% 6%;
             }
 
             img {
