@@ -3,9 +3,9 @@
 ---------------------------------------------------------------------------------- */
 footer {
     background: $background-two;
-    padding: 50px 20px 20px;
+    padding: $m-pad $s-pad 20px;
     @media screen and (min-width: $l-tablet) {
-        padding: 50px 50px 20px;
+        padding: $m-pad $m-pad $s-pad;
     }
 
     > div {
@@ -34,7 +34,7 @@ footer {
         font-style: normal;
         font-weight: 500;
         line-height: 1.2;
-        margin-top: 50px;
+        margin-top: $m-margin;
         @media screen and (min-width: $s-tablet) {
             margin-top: 0;
         }
@@ -67,7 +67,7 @@ footer {
 }
 
 .social-nav {
-    margin-top: 50px;
+    margin-top: $m-margin;
     @media screen and (min-width: $s-tablet) {
         margin-top: 0;
     }

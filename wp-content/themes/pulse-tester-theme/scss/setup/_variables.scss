@@ -23,6 +23,30 @@ $border-one: $blue;
 
 
 
+// Spacing ------------------------------------------------------------ //
+// -------------------------------------------------------------------- //
+
+// Line Height
+$base-line-height: 1.5;
+$header-line-height: 1;
+
+// Margin
+$s-margin: 20px;
+$m-margin: 50px;
+
+// Padding
+$s-pad: 20px;
+$m-pad: 50px;
+
+
+
+// Responsive Settings ------------------------------------------------ //
+// -------------------------------------------------------------------- //
+$max-width: 1400px;
+$s-tablet: 768px;
+$l-tablet: 1024px;
+$s-desktop: 1200px;
+
 
 
 // Fonts / Sizes ------------------------------------------------------ //
@@ -42,34 +66,6 @@ $h3-font-size: 28px;
 $h4-font-size: 22px;
 $h5-font-size: 20px;
 $h6-font-size: 16px;
-
-
-
-// Spacing ------------------------------------------------------------ //
-// -------------------------------------------------------------------- //
-
-// Line Height
-$base-line-height: 1.5;
-$header-line-height: 1;
-
-// Margin
-$s-margin: 20px;
-$m-margin: 50px;
-$l-margin: 100px;
-
-// Padding
-$s-pad: 20px;
-$m-pad: 50px;
-$l-pad: 100px;
-
-
-
-// Responsive Settings ------------------------------------------------ //
-// -------------------------------------------------------------------- //
-$max-width: 1400px;
-$s-tablet: 768px;
-$l-tablet: 1024px;
-$s-desktop: 1200px;
 
 
 

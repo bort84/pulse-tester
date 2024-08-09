@@ -7,15 +7,15 @@ header {
     z-index: 10;
     width: 100%;
     background-color: $background-one;
-    padding: 0 20px;
+    padding: 0 $s-pad;
     @media screen and (min-width: $l-tablet) {
-        padding: 0 50px;
+        padding: 0 $m-pad;
     }
 
     > div {
         @extend .m-wrapper;
         position: relative;
-        padding: 20px 0;
+        padding: $s-pad 0;
         @media screen and (min-width: 1080px) {
             display: flex;
         }
@@ -90,7 +90,7 @@ header {
     }
 
     > ul {
-        margin-top: 50px;
+        margin-top: $m-margin;
         @media screen and (min-width: 1080px) {
             margin-top: 0;
         }

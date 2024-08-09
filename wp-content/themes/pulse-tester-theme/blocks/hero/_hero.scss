@@ -37,8 +37,8 @@
             transform: translateX(-50%);
             @media screen and (min-width: $s-tablet) {
                 border-left: 15px solid transparent;
-            border-right: 15px solid transparent;
-            border-top: 15px solid #fff;
+                border-right: 15px solid transparent;
+                border-top: 15px solid #fff;
             }
         }
     }
@@ -93,8 +93,7 @@
         text-transform: initial;
     }
 
-    .title {
-       
+    .title { 
         width: 100%;
         height: 100%;
         position: relative;
@@ -106,8 +105,6 @@
             position: relative;
             z-index: 1;
             margin-top: 200px;
-
-            
         }
         
         &:before {
@@ -199,7 +196,6 @@
         padding: 0 20px;
         height: 100%; 
         display: flex;
-        
         flex-direction: column-reverse;
         position: relative;
         z-index: 2;
@@ -210,8 +206,10 @@
 
         > div {
             flex: 0 1 50%;
+            max-width: 50%;
             @media screen and (min-width: $s-tablet) {
-                flex: 0 1 50%
+                flex: 0 1 50%;
+                max-width: 50%;
             }
             
         }

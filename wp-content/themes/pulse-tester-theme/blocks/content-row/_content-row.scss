@@ -10,10 +10,10 @@
         background-color: rgba(255, 255, 255, .85);
         > div {
             @extend .m-wrapper;
-            padding-right: 20px;
-            padding-left: 20px;
-            padding-top: 50px;
-            padding-bottom: 50px;
+            padding-right: $s-pad;
+            padding-left: $s-pad;
+            padding-top: $m-pad;
+            padding-bottom: $m-pad;
             text-align: center;
             @media screen and (min-width: $s-tablet) {
                 display: flex;
@@ -34,7 +34,6 @@
 
         img {
             @media screen and (min-width: $s-tablet) {
-              
                 position: absolute;
                 top: 50%;
                 transform: translateY(-50%);
@@ -47,13 +46,12 @@
     }
 
     .content {
-        padding-bottom: 50px;
-        
+        padding-bottom: $m-pad;
         @media screen and (min-width: $s-tablet) {
             flex: 0 1 50%;
             max-width: 50%;
-            padding-right: 50px;
-            padding-top: 50px;
+            padding-right: $m-pad;
+            padding-top: $m-pad;
         }
     }
 

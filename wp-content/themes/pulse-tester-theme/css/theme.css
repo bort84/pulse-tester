@@ -1182,12 +1182,14 @@ footer {
     .hero .content > div {
       -webkit-box-flex: 0;
           -ms-flex: 0 1 50%;
-              flex: 0 1 50%; }
+              flex: 0 1 50%;
+      max-width: 50%; }
       @media screen and (min-width: 768px) {
         .hero .content > div {
           -webkit-box-flex: 0;
               -ms-flex: 0 1 50%;
-                  flex: 0 1 50%; } }
+                  flex: 0 1 50%;
+          max-width: 50%; } }
 .wp-block .hero {
   height: 80vh; }
 
@@ -1196,8 +1198,11 @@ footer {
 ---------------------------------------------------------------------------------- */
 .text {
   text-align: center;
-  padding: 0 50px;
-  margin: 50px 0; }
+  margin: 50px 0;
+  padding: 0 20px; }
+  @media screen and (min-width: 1024px) {
+    .text {
+      padding: 0 50px; } }
   .text h2 {
     margin-top: 0; }
 /*# sourceMappingURL=theme.css.map */
