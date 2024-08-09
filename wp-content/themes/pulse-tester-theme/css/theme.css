@@ -874,9 +874,12 @@ footer {
   footer p {
     color: #fff;
     font-family: "Helvetica Neue LT Std Cn", sans-serif;
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 500;
     margin: 100px 0 0; }
+    @media screen and (min-width: 768px) {
+      footer p {
+        font-size: 16px; } }
   footer h5 {
     color: #fff;
     text-transform: initial;

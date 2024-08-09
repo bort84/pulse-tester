@@ -20,7 +20,7 @@
 		<section class="hero">
 			<?php if ($background_video_mp4 || $background_video_mov || $background_video_ogv || $background_video_webm) { ?>
 				<div class="video-container">
-				<video autoplay muted loop>
+				<video autoplay muted loop playsinline>
 					<?php if ($background_video_mp4) { ?><source src="<?php echo $background_video_mp4; ?>" type="video/mp4"><?php } ?>
 					<?php if ($background_video_mov) { ?><source src="<?php echo $background_video_mov; ?>" type="video/mov"><?php } ?>
 					<?php if ($background_video_ogv) { ?><source src="<?php echo $background_video_mp4; ?>" type="video/ogg"><?php } ?>
