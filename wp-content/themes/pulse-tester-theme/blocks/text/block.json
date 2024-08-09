@@ -1,0 +1,16 @@
+{
+    "name": "acf/text",
+    "title": "Text",
+    "description": "A custom Text block that uses ACF fields.",
+    "category": "pulse-blocks",
+    "icon": "media-text",
+    "keywords": ["content", "text", "title"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "text.php"
+    },
+    "supports": {
+        "align": false
+    },
+    "example": {}
+}

@@ -1,0 +1,16 @@
+{
+    "name": "acf/content-row",
+    "title": "Content Row",
+    "description": "A custom Content Row block that uses ACF fields.",
+    "category": "pulse-blocks",
+    "icon": "align-pull-right",
+    "keywords": ["content", "row", "text", "image"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "content-row.php"
+    },
+    "supports": {
+        "align": false
+    },
+    "example": {}
+}

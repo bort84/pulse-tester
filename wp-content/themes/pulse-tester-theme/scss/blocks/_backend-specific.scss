@@ -1,0 +1,34 @@
+/* Backend Specific Styles
+-------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------- */
+
+.wp-block {
+    max-width: 100%;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+
+    * {
+        box-sizing: border-box;
+    }
+
+    // Stops SVG images being 100%
+    img[src$=".svg"]:not(.emoji) {
+        width: auto !important;
+    }
+
+    .hidden-warning * {
+        font-family: $font-one;
+    }
+}
+
+.wp-block-post-title {
+    font-size: revert;
+}
+
+.hidden-warning {
+	background-color: #e5324d;
+	color: white;
+	font-size: 1.2em;
+	text-align: center;
+	padding: 15px;
+}

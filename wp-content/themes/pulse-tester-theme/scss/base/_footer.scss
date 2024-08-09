@@ -1,0 +1,90 @@
+/* Footer Styles
+-------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------- */
+footer {
+    background: $background-two;
+    padding: 50px 20px 20px;
+    @media screen and (min-width: $l-tablet) {
+        padding: 50px 50px 20px;
+    }
+
+    > div {
+        @extend .m-wrapper;
+    }
+
+    p {
+        color: $text-two;
+        font-family: $font-two;
+        font-size: 16px;
+        font-weight: 500;
+        margin: 100px 0 0;
+    }
+
+    h5 {
+        color: $text-two;
+        text-transform: initial;
+        font-weight: 500;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    address {
+        color: $text-two;
+        font-family: $font-two;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.2;
+        margin-top: 50px;
+        @media screen and (min-width: $s-tablet) {
+            margin-top: 0;
+        }
+    }
+
+    .upper {
+        
+        @media screen and (min-width: $s-tablet) {
+            display: flex;
+            align-items: center;
+        }
+
+        > div {
+            
+            @media screen and (min-width: $s-tablet) {
+                margin-right: auto;
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        .footer-logo {
+            margin-right: 50px;
+        }
+
+        nav {
+            margin-left: auto;
+        }
+    }
+}
+
+.social-nav {
+    margin-top: 50px;
+    @media screen and (min-width: $s-tablet) {
+        margin-top: 0;
+    }
+
+    > ul {
+        > li {
+            display: inline-block;
+            margin-right: 2px;
+
+            > a {
+                color: $text-two;
+                text-decoration: none;
+                transition: .15s linear;
+                &:hover {
+                    color: $link-one;
+                }
+            }
+        }
+    }
+}

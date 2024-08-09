@@ -1,0 +1,30 @@
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0,0,0,0);
+	border: 0;
+}
+
+.l-wapper {
+	max-width: $max-width;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.m-wrapper {
+	max-width: 1020px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.content-module {
+	> div {
+		@extend .m-wrapper;
+	}
+}

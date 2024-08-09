@@ -1,0 +1,147 @@
+/* Base Styles
+-------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------- */
+/* http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+/* Element Adjustments */
+main {
+	display: block; /* IE! */
+}
+
+img {
+	margin: 0;
+	max-width: 100%;
+	height: auto;
+}
+
+figure {
+	margin: 0;
+}
+
+nav ul,
+nav li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+select {
+	color: $text-one;
+}
+
+/* Body */
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	-webkit-font-smoothing: antialiased;
+	color: $text-one;
+	font-family: $font-one;
+	font-weight: normal;
+	font-size: $base-font-size;
+	line-height: $base-line-height;
+
+	&.loading-js {
+		visibility: hidden;
+	}
+}
+
+/* Default element styles for WP editor */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	line-height: $header-line-height;
+	text-rendering: optimizeLegibility; // Fix the character spacing for headings
+	font-weight: 300;
+	text-transform: uppercase;
+	color: $text-three;
+	font-family: $font-two;
+}
+
+h1 {
+	font-size: 40px;
+	@media screen and (min-width: $s-tablet) {
+		font-size: $h1-font-size;
+	}
+}
+
+h2 {
+	font-size: 40px;
+	@media screen and (min-width: $s-tablet) {
+		font-size: $h2-font-size;
+	}
+}
+
+h3 {
+	font-size: $h3-font-size;
+}
+
+h4 {
+	font-size: $h4-font-size;
+}
+
+h5 {
+	font-size: $h5-font-size;
+}
+
+h6 {
+	font-size: $h6-font-size;
+}
+
+p {
+	font-size: $base-font-size;
+	margin: 1em 0;
+}
+
+hr {
+	border-top: 1px solid $border-one;
+	margin: $m-margin 0;
+}
+
+a {
+	color: $link-one;
+	&:focus {
+		outline: none;
+	}
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+	background-color: #eee;
+	clip: auto !important;
+	clip-path: none;
+	color: #444;
+	display: block;
+	font-size: 1em;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000;
+	/* Above WP toolbar. */
+}

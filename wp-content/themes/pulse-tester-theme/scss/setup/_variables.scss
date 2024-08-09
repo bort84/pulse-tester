@@ -1,0 +1,130 @@
+// Colors ------------------------------------------------------------- //
+// -------------------------------------------------------------------- //
+
+$blue: #3585b7;
+$dark-blue: #00355f;
+$black: #000;
+$white: #fff;
+
+// Background Colors
+$background-one: $white;
+$background-two: $dark-blue;
+
+// Font Colors
+$text-one: $black;
+$text-two: $white;
+$text-three: $dark-blue;
+
+// Link Colors
+$link-one: $blue;
+
+// Border Colors
+$border-one: $blue;
+
+
+
+
+
+// Fonts / Sizes ------------------------------------------------------ //
+// -------------------------------------------------------------------- //
+
+// Fonts
+$font-one: 'Helvetica Neue LT Std', sans-serif; // 300(Light), 400(Regular), 700(bold)
+$font-two: 'Helvetica Neue LT Std Cn', sans-serif; // 300(Light), 400(Regular), 700(bold)
+
+// Font Sizes
+$base-font-size: 20px !default;
+
+// Header sizes
+$h1-font-size: 60px;
+$h2-font-size: 60px;
+$h3-font-size: 28px;
+$h4-font-size: 22px;
+$h5-font-size: 20px;
+$h6-font-size: 16px;
+
+
+
+// Spacing ------------------------------------------------------------ //
+// -------------------------------------------------------------------- //
+
+// Line Height
+$base-line-height: 1.5;
+$header-line-height: 1;
+
+// Margin
+$s-margin: 20px;
+$m-margin: 50px;
+$l-margin: 100px;
+
+// Padding
+$s-pad: 20px;
+$m-pad: 50px;
+$l-pad: 100px;
+
+
+
+// Responsive Settings ------------------------------------------------ //
+// -------------------------------------------------------------------- //
+$max-width: 1400px;
+$s-tablet: 768px;
+$l-tablet: 1024px;
+$s-desktop: 1200px;
+
+
+
+// Registering Fonts ------------------------------------------------ //
+// -------------------------------------------------------------------- //
+@font-face {
+    font-family: 'Helvetica Neue LT Std Cn';
+    src: url('../fonts/helvetica-neue-lt-std-cn/HelveticaNeueLTStd-Cn.woff2') format('woff2'),
+        url('../fonts/helvetica-neue-lt-std-cn/HelveticaNeueLTStd-Cn.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue LT Std Cn';
+    src: url('../fonts/helvetica-neue-lt-std-cn/HelveticaNeueLTStd-LtCn.woff2') format('woff2'),
+        url('../fonts/helvetica-neue-lt-std-cn/HelveticaNeueLTStd-LtCn.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue LT Std Cn';
+    src: url('../fonts/helvetica-neue-lt-std-cn/HelveticaNeueLTStd-MdCn.woff2') format('woff2'),
+        url('../fonts/helvetica-neue-lt-std-cn/HelveticaNeueLTStd-MdCn.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue LT Std';
+    src: url('../fonts/helvetica-neue-lt-std/HelveticaNeueLTStd-Lt.woff2') format('woff2'),
+        url('../fonts/helvetica-neue-lt-std/HelveticaNeueLTStd-Lt.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue LT Std';
+    src: url('../fonts/helvetica-neue-lt-std/HelveticaNeueLTStd-Bd.woff2') format('woff2'),
+        url('../fonts/helvetica-neue-lt-std/HelveticaNeueLTStd-Bd.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue LT Std';
+    src: url('../fonts/helvetica-neue-lt-std/HelveticaNeueLTStd-Roman.woff2') format('woff2'),
+        url('../fonts/helvetica-neue-lt-std/HelveticaNeueLTStd-Roman.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

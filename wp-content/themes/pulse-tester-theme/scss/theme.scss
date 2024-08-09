@@ -1,0 +1,29 @@
+/* ----------------------------------------------------------------------------------
+
+JB CSS
+
+---------------------------------------------------------------------------------- */
+
+// - Theme.scss should compile and generate to: /css/theme.css
+// - Styles.css will contain no actual styles.
+// - HOWEVER, if after site develpment has completed, styles need to be added quickly without SASS, then should then be added to style.css, and only there.
+
+// Vendor Styles
+@import "vendors/normalize";
+@import "vendors/boilerplate";
+
+// Setup Styles
+@import "setup/variables";
+@import "setup/base";
+@import "setup/reusable-classes";
+
+// Base Styles
+@import "base/header";
+@import "base/footer";
+
+
+// Blocks Styles
+@import "blocks/blocks";
+
+// Page/Template Styles
+// @import "pages/404";

@@ -1,0 +1,1 @@
+jQuery(document).ready((function(e){e(".hamburger-menu").click((function(){e(this).toggleClass("open"),e(".primary-nav").toggle()})),e("body").removeClass("loading-js")}));

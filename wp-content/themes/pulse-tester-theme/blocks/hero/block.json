@@ -1,0 +1,16 @@
+{
+    "name": "acf/hero",
+    "title": "Hero",
+    "description": "A custom Hero block that uses ACF fields.",
+    "category": "pulse-blocks",
+    "icon": "format-video",
+    "keywords": ["hero", "text", "title"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "hero.php"
+    },
+    "supports": {
+        "align": false
+    },
+    "example": {}
+}

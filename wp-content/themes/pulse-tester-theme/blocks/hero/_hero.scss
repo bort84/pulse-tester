@@ -1,0 +1,228 @@
+/* Block: Hero Styles
+-------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------- */
+.hero {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+
+    .scroll {
+        color: $text-two;
+        text-transform: uppercase;
+        position: absolute;
+        z-index: 2;
+        bottom: 30px;
+        width: 100%;
+        font-weight: 300;
+        font-size: 13px;
+        letter-spacing: 3px;
+        text-align: center;
+        @media screen and (min-width: $s-tablet) {
+            font-size: 15px;
+            bottom: 100px;
+        }
+
+        &:after {
+            content: '';
+            display: block;
+            width: 0; 
+            height: 0; 
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 10px solid #fff;
+            position: absolute;
+            left: 50%;
+            margin-top: 5px;
+            transform: translateX(-50%);
+            @media screen and (min-width: $s-tablet) {
+                border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-top: 15px solid #fff;
+            }
+        }
+    }
+
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 53, 95, .52);
+    }
+
+    .video-container {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        z-index: 0;
+        width: 100%;
+        height: 100%; 
+        overflow: hidden;
+    }
+
+    .video-container video {
+        min-width: 100%; 
+        min-height: 100%; 
+        width: auto;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    h1 {
+        margin: 0 0 20px;
+        font-weight: bold;
+        color: $text-two;
+        font-size: 36px;
+    }
+
+    h2 {
+        margin: 0;
+        font-weight: 500;
+        color: $text-two;
+        font-size: 30px;
+        border-left: 2px solid white;
+        padding-left: 20px;
+        padding-top: 7px;
+        margin-left: 10px;
+        text-transform: initial;
+    }
+
+    .title {
+       
+        width: 100%;
+        height: 100%;
+        position: relative;
+        z-index: 0;
+        display: flex;
+        align-items: center;
+
+        > div {
+            position: relative;
+            z-index: 1;
+            margin-top: 200px;
+
+            
+        }
+        
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            z-index: 0;
+            bottom: -500px;
+            right:0;
+            width: 767px;
+            height: 767px;
+            border-radius: 100%;
+            background: rgba(40, 35, 124 , .36);
+            @media screen and (min-width: $s-tablet) {
+                bottom: -200px;
+                width: 767px;
+                height: 767px;
+            }
+        }
+        
+    }
+
+    .graphic {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        z-index: 0;
+        display: flex;
+        align-items: flex-end;
+        padding-left: 0px;
+        justify-content: flex-end;
+        @media screen and (min-width: $s-tablet) {
+            padding-left: 20px;
+            align-items: center;
+        }
+        @media screen and (min-width: $l-tablet) {
+            padding-left: 50px;
+        }
+
+        @media screen and (min-width: $s-desktop) {
+            padding-left: 100px;
+        }
+        
+        
+        > div {
+            background: rgba(9, 76, 122, .61);
+            padding: 16% 10%;
+            border-radius: 100%;
+            position: relative;
+            @media screen and (min-width: $s-tablet) {
+                padding: 32% 13%;
+            }
+
+            > img {
+                position: relative;
+                z-index: 2;
+                @media screen and (max-width: $s-tablet) {
+                    max-width: 125px;
+                }
+
+            }
+        }
+
+        span {
+            display: block;
+            background: rgba(172, 184, 71, .61);
+            position: absolute;
+            z-index: 1;
+            top: -20px;
+            right: -10px;
+            padding: 17% 6.5%;
+            border-radius: 100%;
+
+            @media screen and (min-width: $s-tablet) {
+                padding: 17% 6.5%;
+            }
+
+            img {
+                @media screen and (max-width: $s-tablet) {
+                    max-width: 80px;
+                }
+            }
+        }
+
+    }
+
+    .content {
+        @extend .m-wrapper;
+        padding: 0 20px;
+        height: 100%; 
+        display: flex;
+        
+        flex-direction: column-reverse;
+        position: relative;
+        z-index: 2;
+        @media screen and (min-width: $s-tablet) {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        > div {
+            flex: 0 1 50%;
+            @media screen and (min-width: $s-tablet) {
+                flex: 0 1 50%
+            }
+            
+        }
+    }
+
+
+}
+
+
+.wp-block {
+    .hero {
+        height: 80vh;
+    }
+}

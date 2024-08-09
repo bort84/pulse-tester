@@ -1,0 +1,122 @@
+/* Header Styles
+-------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------- */
+header {
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    background-color: $background-one;
+    padding: 0 20px;
+    @media screen and (min-width: $l-tablet) {
+        padding: 0 50px;
+    }
+
+    > div {
+        @extend .m-wrapper;
+        position: relative;
+        padding: 20px 0;
+        @media screen and (min-width: 1080px) {
+            display: flex;
+        }
+    }
+
+    .upper {
+        position: relative;
+        @media screen and (min-width: 1080px) {
+            margin-right: auto;
+        }
+    }
+}
+
+.hamburger-menu {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+    @media screen and (min-width: 1080px) {
+        display: none;
+    }
+
+    span {
+        display: block;
+        position: relative;
+        width: 23px;
+        height: 2px;
+        margin: 6px;
+        background-color: $background-two;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+
+    &.open {
+        .bun.top {
+            top: 10px;
+            transform: rotate(-45deg);
+        }
+
+        .patty {
+            background: none !important;
+        }
+
+        .bun.bottom {
+            top: -6px;
+            transform: rotate(45deg);
+        }
+    }
+}
+
+.primary-logo {
+    @media screen and (max-width: $s-tablet) {
+        max-width: 60px;
+    }
+}
+
+.secondary-logo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    @media screen and (max-width: $s-tablet) {
+        max-width: 40px;
+    }
+}
+
+.primary-nav {
+    display: none;
+    text-align: right;
+    @media screen and (min-width: 1080px) {
+        display: block !important;
+        align-self: flex-end;
+    }
+
+    > ul {
+        margin-top: 50px;
+        @media screen and (min-width: 1080px) {
+            margin-top: 0;
+        }
+        
+        > li {
+            @media screen and (min-width: $s-tablet) {
+                display: inline-block;
+                margin-left: 20px;
+            }
+            @media screen and (min-width: 1080px) {
+                margin-left: 40px;
+            }
+
+            a {
+                color: $link-one;
+                font-family: $font-two;
+                font-size: 18px;
+                font-weight: 500;
+                text-transform: uppercase;
+                text-decoration: none;
+                transition: .15s linear;
+
+                &:hover {
+                    color: $dark-blue;
+                }
+            }
+        }
+    }
+}
