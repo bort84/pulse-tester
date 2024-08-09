@@ -206,10 +206,8 @@
 
         > div {
             flex: 0 1 50%;
-            max-width: 50%;
             @media screen and (min-width: $s-tablet) {
                 flex: 0 1 50%;
-                max-width: 50%;
             }
             
         }
